@@ -1,0 +1,142 @@
+input[type=radio] {
+    display: none;
+}
+body {
+    background: black; 
+    font-size: 20px; 
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 1.5px;
+}
+#header {
+    display: flex; 
+    flex-direction: column; 
+    background: url(img/roses-header.jpg);
+    width: 100%;
+    height: 20vh; 
+    color: #F9F9F9; 
+    align-content: flex-start;
+    justify-content: flex-end;
+    text-align: right; 
+}
+#header h1 {
+    opacity: 1;
+}
+.question {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 10vh; 
+}
+.question h3 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;  
+    box-sizing: border-box;
+    width: auto; 
+    padding: 10px; 
+    font-weight: normal;
+    margin-bottom: 15px; 
+    font-size: 2rem; 
+    color: #F9C507;
+    font-size: 2.3rem;
+    border: 5px solid #F9F9F9;
+}
+.choices {
+    display: flex; 
+    flex-flow: row wrap; 
+    box-sizing: border-box;
+    justify-content: center;
+    font-family: 'Open Sans', 'sans-serif';
+}
+.img-caption {
+    text-align: center; 
+}
+.choice {
+    display: flex;
+    background: #F9F9F9;
+    flex-direction: column; 
+    margin: 10px;  
+}
+input[type=radio]:checked + div {  
+    background: #F9C507; 
+    box-shadow: 5px 5px #657ED4; 
+}
+input[type=radio]:hover + div {
+    box-shadow: 5px 5px #657ED4; 
+    cursor: pointer;
+}
+input[type=radio]:not(:checked) + div > img {
+    opacity: 0.5;
+}
+input[type=radio]:hover + div > img {
+    opacity: 1; 
+}
+#submit-container {
+    display: flex;
+    justify-content: center; 
+}
+#submit {
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    width: 200px; 
+    height: 100px; 
+    font-size: 1.7rem;
+    margin-top: 20px; 
+    margin-bottom: 60px; 
+    border: none; 
+    border-radius: 3px; 
+}
+#submit:hover {
+    background: #F9C507;
+    cursor: pointer;
+}
+#whoami, #header h1{
+    color: #F9C507;
+    font-size: 3rem; 
+    /* https://css-tricks.com/adding-stroke-to-web-text/ */
+    text-shadow: 
+        3px 3px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+/* all from https://www.w3schools.com/howto/howto_css_modals.asp */ 
+/* The Modal (background) */
+.result {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.result-content {
+    background-color: #F9F9F9;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #454545;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
