@@ -22,8 +22,8 @@ body {
     opacity: 1;
 }
 .question {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-bottom: 10vh; 
 }
 .question h3 {
@@ -35,9 +35,8 @@ body {
     padding: 10px; 
     font-weight: normal;
     margin-bottom: 15px; 
-    font-size: 2rem; 
     color: #F9C507;
-    font-size: 2.3rem;
+    font-size: 2rem;
     border: 5px solid #F9F9F9;
 }
 .choices {
