@@ -47,14 +47,19 @@ body {
     justify-content: center;
     font-family: 'Open Sans', 'sans-serif';
 }
-.img-caption {
-    text-align: center; 
-}
 .choice {
     display: flex;
     background: #F9F9F9;
     flex-direction: column; 
     margin: 10px;  
+    width: 300px;
+    height: 350px;
+}
+.caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto 20px;
 }
 input[type=radio]:checked + div {  
     background: #F9C507; 
