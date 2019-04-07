@@ -26,18 +26,27 @@ body {
     margin-right: 5vw;
     margin-bottom: 10vh; 
 }
+.q-header {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid #F9F9F9;
+    padding: 10px; 
+    margin: 15px 0px 15px 0px; 
+    justify-content: space-between;
+}
+.q-header img {
+    height: inherit; 
+}
 .question h3 {
     display: flex;
-    flex-direction: column;
-    text-align: left;  
+    flex-direction: row;
+    text-align: center;  
     box-sizing: border-box;
     width: auto; 
-    padding: 10px; 
     font-weight: normal;
-    margin-bottom: 15px; 
     color: #F9C507;
     font-size: 2rem;
-    border: 5px solid #F9F9F9;
+    margin: 0;
 }
 .choices {
     display: flex; 
@@ -51,14 +60,15 @@ body {
     background: #F9F9F9;
     flex-direction: column; 
     margin: 10px;  
-    width: 300px;
-    height: 350px;
+    width: 250px;
+    height: 300px;
 }
 .caption {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: auto 20px;
+    font-size: 1rem;
 }
 input[type=radio]:checked + div {  
     background: #F9C507; 
@@ -105,7 +115,17 @@ input[type=radio]:hover + div > img {
         -1px 1px 0 #000,
         1px 1px 0 #000;
 }
-
+.choice > img { 
+    max-width: 100%; 
+    height: auto; 
+}
+.q-header > img {
+    max-height: 100%;
+    width: auto; 
+}
+.no-caption img {
+    height: 100%;
+}
 /* all from https://www.w3schools.com/howto/howto_css_modals.asp */ 
 /* The Modal (background) */
 .result {
