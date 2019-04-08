@@ -7,7 +7,7 @@ body {
     font-family: 'Libre Baskerville', serif;
     letter-spacing: 1.5px;
 }
-#header {
+#quiz-title {
     display: flex; 
     flex-direction: column; 
     background: url(img/roses-header.jpg);
@@ -18,7 +18,7 @@ body {
     justify-content: flex-end;
     text-align: right; 
 }
-#header h1 {
+#quiz-title h1 {
     opacity: 1;
 }
 .question {
@@ -104,7 +104,7 @@ input[type=radio]:hover + div > img {
     background: #F9C507;
     cursor: pointer;
 }
-#whoami, #header h1{
+#whoami, #quiz-title h1{
     color: #F9C507;
     font-size: 3rem; 
     /* https://css-tricks.com/adding-stroke-to-web-text/ */
@@ -116,8 +116,8 @@ input[type=radio]:hover + div > img {
         1px 1px 0 #000;
 }
 .choice > img { 
-    max-width: 100%; 
-    height: auto; 
+    width: 200px; 
+    height: 200px; 
 }
 .q-header > img {
     max-height: 100%;

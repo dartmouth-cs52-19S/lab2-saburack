@@ -1,0 +1,119 @@
+{
+    "quiz_title": "which member of the rose family are you?",
+    "submit_button": "WHO AM I?",
+    "number_of_questions": 2,
+    "congrats": "congrats, you're...",
+    "error": "error! please go back and answer all questions",
+    "outcomes": {
+            "moira": {"img": "img/outcome1.jpg", "text": "outcome 1"},
+            "alexis": {"img": "img/outcome2.jpg", "text": "outcome 2"},
+            "jonny": {"img": "img/outcome1.jpg", "text": "outcome 1"},
+            "david": {"img": "img/outcome2.jpg", "text": "outcome 2"}
+    },
+    "questions": [
+        {
+            "question_name": "Pick a Karda$hian/Jenner:",
+            "question_img_url": "img/header-img.png",
+            "name": "kardashian",
+            "choices": [
+                {
+                    "caption": "Kim",
+                    "img": "img/kim.jpg",
+                    "value": "moira"
+                },
+                {
+                    "caption": "Kylie",
+                    "img": "img/kylie.jpg",
+                    "value": "alexis"
+                },
+                {
+                    "caption": "Kris",
+                    "img": "img/kris.jpeg",
+                    "value": "jonny"
+                },
+                {
+                    "caption": "Khloe",
+                    "img": "img/khloe.jpeg",
+                    "value": "david"
+                }
+
+            ]
+        },
+        {
+            "question_name": "What would you eat for breakfast?",
+            "question_img_url": "img/header-img.png",
+            "name": "breakfast",
+            "choices": [
+                {
+                    "caption": "green juice",
+                    "img": "img/greenjuice.jpg",
+                    "value": "alexis"
+                },
+                {
+                    "caption": "egg white omlette",
+                    "img": "img/eggwhite.jpeg",
+                    "value": "david"
+                },
+                {
+                    "caption": "a bloody mary",
+                    "img": "img/bloodymary.jpg",
+                    "value": "moira"
+                },
+                {
+                    "caption": "waffles",
+                    "img": "img/waffle.jpg",
+                    "value": "jonny"
+                }
+
+            ]
+        },
+        {
+            "question_name": "Which Alexis do you identify with most?",
+            "question_img_url": "img/header-img.png",
+            "name": "alexis",
+            "choices": [
+                {
+                    "img": "img/alexis-j.png",
+                    "value": "jonny"
+                },
+                {
+                    "img": "img/alexis-m.png",
+                    "value": "moira"
+                },
+                {
+                    "img": "img/alexis-a.png",
+                    "value": "alexis"
+                },
+                {
+                    "img": "img/alexis-d.png",
+                    "value": "david"
+                }
+
+            ]
+        },
+        {
+            "question_name": "Pick a Moira Rose quote:",
+            "question_img_url": "img/header-img.png",
+            "name": "moira",
+            "choices": [
+                {
+                    "caption": "&#34I&#39m eating egg whites and hoping the building will collapse.&#34",
+                    "value": "david"
+                },
+                {
+                    "caption": "&#34Stop acting like a disgruntled pelican.&#34",
+                    "value": "jonny"
+                },
+                {
+                    "caption": "&#34While I can&#39t pretend to fully understand them, at least I can pretend to care!&#34",
+                    "value": "alexis"
+                },
+                {
+                    "caption": "&#34Oh i'd kill for a good coma right now&#34",
+                    "value": "moira"
+                }
+
+            ]
+        }
+    ]
+}

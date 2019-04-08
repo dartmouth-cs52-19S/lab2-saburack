@@ -5,227 +5,91 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Baskerville" rel="stylesheet">
     </head>
     <body>
-        <div id="header">
-            <h1>Which member of the Rose family are you?</h1>
-        </div>
-        <div class="question">
-            <div class="q-header">
-                <h3>Pick a Karda$hian/Jenner:</h3>
-                <img src="img/header-img.png">
+        <div id="quiz-title"></div>
+        <div class="questions"></div>
+            <!---div class="question">
+            
+            <div class="question">
+                <div class="q-header">
+                    <h3>Celebrity icon?</h3>
+                    <img src="img/header-img.png">
+                </div>
+                <div class="choices">
+                    <label>
+                        <input type="radio" name="celeb" value="moira"/>
+                        <div class="choice">
+                            <img src="img/babs.jpg" class="img-with-border"/>
+                            <p class="caption">Barbara Streisand</p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="celeb" value="david"/>
+                        <div class="choice">
+                            <img src="img/mariah.jpg" class="img-with-border"/>
+                            <p class="caption">Mariah Carey</p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="celeb" value="jonny"/>
+                        <div class="choice">
+                            <img src="img/bruce.jpg" class="img-with-border"/>
+                            <p class="caption">Bruce Springsteen</p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="celeb" value="alexis"/>
+                        <div class="choice">
+                            <img src="img/parishilton.jpg" class="img-with-border"/>
+                            <p class="caption">Paris Hilton</p>
+                        </div>
+                    </label>
+                </div>
             </div>
-            <div class="choices">
-                <label>
-                    <input type="radio" name="kardashian" value="moira"/>
-                    <div class="choice">
-                        <img src="img/kim.jpg" class="img-with-border"/>
-                        <p class="caption">Kim</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="kardashian" value="alexis"/>
-                    <div class="choice">
-                        <img src="img/kylie.jpg" class="img-with-border"/>
-                        <p class="caption">Kylie</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="kardashian" value="jonny"/>
-                    <div class="choice">
-                        <img src="img/kris.jpeg" class="img-with-border"/>
-                        <p class="caption">Kris</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="kardashian" value="david"/>
-                    <div class="choice">
-                        <img src="img/khloe.jpeg" class="img-with-border"/>
-                        <p class="caption">Khloe</p>
-                    </div>
-                </label>
+        
+            <div class="question">
+                <div class="q-header">
+                    <h3>Ideal vacation?</h3>
+                    <img src="img/header-img.png">
+                </div>
+                <div class="choices">
+                    <label>
+                        <input type="radio" name="vacation" value="jonny"/>
+                        <div class="choice">
+                            <img src="img/roses.jpg" class="img-with-border"/>
+                            <p class="caption">with the family</p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="vacation" value="alexis"/>
+                        <div class="choice">
+                            <img src="img/mykonos.jpg" class="img-with-border"/>
+                            <p class="caption">Mykonos</p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="vacation" value="david"/>
+                        <div class="choice">
+                            <img src="img/paris.jpeg" class="img-with-border"/>
+                            <p class="caption">Paris fashion week</p>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="radio" name="vacation" value="moira"/>
+                        <div class="choice">
+                            <img src="img/dubai.jpg" class="img-with-border"/>
+                            <p class="caption">Dubai</p>
+                        </div>
+                    </label>
+                </div>
             </div>
-        </div>
-        <div class="question">
-            <div class="q-header">
-                <h3>What would you eat for breakfa$t?</h3>
-                <img src="img/header-img.png">
-            </div>
-            <div class="choices">
-                <label>
-                    <input type="radio" name="breakfast" value="alexis"/>
-                    <div class="choice">
-                        <img src="img/greenjuice.jpg" class="img-with-border"/>
-                        <p class="caption">green juice</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="breakfast" value="david"/>
-                    <div class="choice">
-                        <img src="img/eggwhite.jpeg" class="img-with-border"/>
-                        <p class="caption">egg white omlette</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="breakfast" value="moira"/>
-                    <div class="choice">
-                        <img src="img/bloodymary.jpg" class="img-with-border"/>
-                        <p class="caption">a bloody mary</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="breakfast" value="jonny"/>
-                    <div class="choice">
-                        <img src="img/waffle.jpg" class="img-with-border"/>
-                        <p class="caption">waffles</p>
-                    </div>
-                </label>
-            </div>
-        </div>
-        <div class="question">
-            <div class="q-header">
-                <h3>Which Alexi$ do you identify with most?</h3>
-                <img src="img/header-img.png">
-            </div>
-            <div class="choices">
-                <label>
-                    <input type="radio" name="gif" value="jonny"/>
-                    <div class="choice no-caption">
-                        <img src="img/alexis-j.png" class="img-with-border"/>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="gif" value="moira"/>
-                    <div class="choice no-caption">
-                        <img src="img/alexis-m.png" class="img-with-border"/>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="gif" value="alexis"/>
-                    <div class="choice no-caption">
-                        <img src="img/alexis-a.png" class="img-with-border"/>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="gif" value="david"/>
-                    <div class="choice no-caption">
-                        <img src="img/alexis-d.png" class="img-with-border"/>
-                    </div>
-                </label>
-            </div>
-        </div>
-        <div class="question">
-            <div class="q-header">
-                <h3>Celebrity icon?</h3>
-                <img src="img/header-img.png">
-            </div>
-            <div class="choices">
-                <label>
-                    <input type="radio" name="celeb" value="moira"/>
-                    <div class="choice">
-                        <img src="img/babs.jpg" class="img-with-border"/>
-                        <p class="caption">Barbara Streisand</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="celeb" value="david"/>
-                    <div class="choice">
-                        <img src="img/mariah.jpg" class="img-with-border"/>
-                        <p class="caption">Mariah Carey</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="celeb" value="jonny"/>
-                    <div class="choice">
-                        <img src="img/bruce.jpg" class="img-with-border"/>
-                        <p class="caption">Bruce Springsteen</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="celeb" value="alexis"/>
-                    <div class="choice">
-                        <img src="img/parishilton.jpg" class="img-with-border"/>
-                        <p class="caption">Paris Hilton</p>
-                    </div>
-                </label>
-            </div>
-        </div>
-        <div class="question">
-            <div class="q-header">
-                <h3>Pick a Moira Ro$e quote:</h3>
-                <img src="img/header-img.png">
-            </div>
-            <div class="choices">
-                <label>
-                    <input type="radio" name="quote" value="david"/>
-                    <div class="choice">
-                        <p class="caption">&#34I&#39m eating egg whites and hoping the building will collapse.&#34</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="quote" value="jonny"/>
-                    <div class="choice">
-                        <p class="caption">&#34Stop acting like a disgruntled pelican.&#34</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="quote" value="alexis"/>
-                    <div class="choice">
-                        <p class="caption">&#34While I can&#39t pretend to fully understand them, at least I can pretend to care!&#34</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="quote" value="moira"/>
-                    <div class="choice">
-                        <p class="caption">&#34Oh i'd kill for a good coma right now&#34</p>
-                    </div>
-                </label>
-            </div>
-        </div>
-        <div class="question">
-            <div class="q-header">
-                <h3>Ideal vacation?</h3>
-                <img src="img/header-img.png">
-            </div>
-            <div class="choices">
-                <label>
-                    <input type="radio" name="vacation" value="jonny"/>
-                    <div class="choice">
-                        <img src="img/roses.jpg" class="img-with-border"/>
-                        <p class="caption">with the family</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="vacation" value="alexis"/>
-                    <div class="choice">
-                        <img src="img/mykonos.jpg" class="img-with-border"/>
-                        <p class="caption">Mykonos</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="vacation" value="david"/>
-                    <div class="choice">
-                        <img src="img/paris.jpeg" class="img-with-border"/>
-                        <p class="caption">Paris fashion week</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="vacation" value="moira"/>
-                    <div class="choice">
-                        <img src="img/dubai.jpg" class="img-with-border"/>
-                        <p class="caption">Dubai</p>
-                    </div>
-                </label>
-            </div>
-        </div>
+        <--/div-->
         <div id="submit-container">
-            <button id="submit">WHO AM I?</button>
+            <button id="submit"></button>
         </div>
         <div class="done"> 
             <div id="myresult" class="result">
                 <div class="result-content">
                     <span class="close">&times;</span>
-                    <p id="congrats">congrats you're...</p>
-                    <p id="whoami">David!</p>
-                    <p id="whoami-description">none</p>
                 </div>
             </div>
         </div>
@@ -235,5 +99,6 @@
             crossorigin="anonymous">
         </script>
         <script src="main.js"></script>
+        
     </body>
 </html>
