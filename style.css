@@ -14,12 +14,10 @@ body {
     width: 100%;
     height: 20vh; 
     color: #F9F9F9; 
-    align-content: flex-start;
+    align-content: flex-end;
     justify-content: flex-end;
     text-align: right; 
-}
-#quiz-title h1 {
-    opacity: 1;
+    padding-right: 30px; 
 }
 .question {
     margin-left: 5vw;
@@ -35,7 +33,7 @@ body {
     justify-content: space-between;
 }
 .q-header img {
-    height: inherit; 
+    height: 40px; 
 }
 .question h3 {
     display: flex;
@@ -78,7 +76,7 @@ input[type=radio]:hover + div {
     box-shadow: 5px 5px #657ED4; 
     cursor: pointer;
 }
-input[type=radio]:not(:checked) + div > img {
+input[type=radio]:not(:checked)  + div > img {
     opacity: 0.5;
 }
 input[type=radio]:hover + div > img {
@@ -116,17 +114,21 @@ input[type=radio]:hover + div > img {
         1px 1px 0 #000;
 }
 .choice > img { 
-    width: 200px; 
-    height: 200px; 
+    width: 100%; 
+    height: auto; 
+    max-height: 250px;
+}
+.choice.no-caption > img{
+    width: 100%;
+    height: 100%; 
+    max-height: 300px; 
 }
 .q-header > img {
     max-height: 100%;
-    width: auto; 
+    width: auto;
+    max-width: 100%;  
 }
-.no-caption img {
-    height: 100%;
-}
-/* all from https://www.w3schools.com/howto/howto_css_modals.asp */ 
+/* most of this is from https://www.w3schools.com/howto/howto_css_modals.asp */ 
 /* The Modal (background) */
 .result {
     display: none; /* Hidden by default */
@@ -141,15 +143,35 @@ input[type=radio]:hover + div > img {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
 .result-content {
     background-color: #F9F9F9;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     width: 80%; /* Could be more or less, depending on screen size */
 }
-
-/* The Close Button */
+.outcome {
+    display: flex; 
+    flex-direction: row; 
+}
+#whoami {
+    margin: 20px auto; 
+    text-align: center;
+}
+#whoami-description {
+    text-align: center; 
+    margin: 20px; 
+}
+.outcome-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; 
+    padding-right: 20px; 
+}
+.outcome-img {
+    width: auto;
+    height: 300px;
+    padding-right: 30px;  
+}
 .close {
     color: #454545;
     float: right;

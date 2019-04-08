@@ -1,18 +1,18 @@
 {
-    "quiz_title": "which member of the rose family are you?",
+    "quiz_title": "Which member of the Rose family are you?",
     "submit_button": "WHO AM I?",
-    "number_of_questions": 2,
+    "number_of_questions": 6,
     "congrats": "congrats, you're...",
-    "error": "error! please go back and answer all questions",
+    "error": "please go back and answer all questions",
     "outcomes": {
-            "moira": {"img": "img/outcome1.jpg", "text": "outcome 1"},
-            "alexis": {"img": "img/outcome2.jpg", "text": "outcome 2"},
-            "jonny": {"img": "img/outcome1.jpg", "text": "outcome 1"},
-            "david": {"img": "img/outcome2.jpg", "text": "outcome 2"}
+            "moira": {"img": "img/m.jpg", "text": "you have a tendency to over-exaggerate and self-indulge, but your charisma and talent make up for it"},
+            "alexis": {"img": "img/a.jpg", "text": "you're a social butterfly, loove your green smoothies, and are always up for gossiping"},
+            "johnny": {"img": "img/j.jpg", "text": "you're a hardworker, super loyal, and just want some nice family time "},
+            "david": {"img": "img/d.jpg", "text": "you're not afraid to tell it like it is and you love a designer sweater in the summer. and you can't ride a bike."}
     },
     "questions": [
         {
-            "question_name": "Pick a Karda$hian/Jenner:",
+            "question_name": "Pick a Kardashian/Jenner:",
             "question_img_url": "img/header-img.png",
             "name": "kardashian",
             "choices": [
@@ -29,7 +29,7 @@
                 {
                     "caption": "Kris",
                     "img": "img/kris.jpeg",
-                    "value": "jonny"
+                    "value": "johnny"
                 },
                 {
                     "caption": "Khloe",
@@ -62,7 +62,7 @@
                 {
                     "caption": "waffles",
                     "img": "img/waffle.jpg",
-                    "value": "jonny"
+                    "value": "johnny"
                 }
 
             ]
@@ -74,7 +74,7 @@
             "choices": [
                 {
                     "img": "img/alexis-j.png",
-                    "value": "jonny"
+                    "value": "johnny"
                 },
                 {
                     "img": "img/alexis-m.png",
@@ -88,7 +88,59 @@
                     "img": "img/alexis-d.png",
                     "value": "david"
                 }
-
+            ]
+        },
+        {
+            "question_name": "Pick a designer brand:",
+            "question_img_url": "img/header-img.png",
+            "name": "brand",
+            "choices": [
+                {
+                    "caption": "Isabel Marant",
+                    "img": "img/im.jpg",
+                    "value": "alexis"
+                },
+                {
+                    "caption": "Alexander McQueen",
+                    "img": "img/amq.jpg",
+                    "value": "moira"
+                },
+                {
+                    "caption": "Helmut Lang",
+                    "img": "img/hl.jpg",
+                    "value": "david"
+                },
+                {
+                    "caption": "No clue",
+                    "value": "johnny"
+                }
+            ]
+        },
+        {
+            "question_name": "Who is your icon?",
+            "question_img_url": "img/header-img.png",
+            "name": "celeb",
+            "choices": [
+                {
+                    "caption": "Barbara Streisand",
+                    "img": "img/babs.jpg",
+                    "value": "moira"
+                },
+                {
+                    "caption": "Mariah Carey",
+                    "img": "img/mariah.jpg",
+                    "value": "david"
+                },
+                {
+                    "caption": "Bruce Springstein",
+                    "img": "img/bruce.jpg",
+                    "value": "johnny"
+                },
+                {
+                    "caption": "Paris Hilton",
+                    "img": "img/parishilton.jpg",
+                    "value": "alexis"
+                }
             ]
         },
         {
@@ -102,7 +154,7 @@
                 },
                 {
                     "caption": "&#34Stop acting like a disgruntled pelican.&#34",
-                    "value": "jonny"
+                    "value": "johnny"
                 },
                 {
                     "caption": "&#34While I can&#39t pretend to fully understand them, at least I can pretend to care!&#34",
@@ -113,6 +165,33 @@
                     "value": "moira"
                 }
 
+            ]
+        },
+        {
+            "question_name": "What is your ideal vacation?",
+            "question_img_url": "img/header-img.png",
+            "name": "vacation",
+            "choices": [
+                {
+                    "caption": "With the family",
+                    "img": "img/roses.jpg",
+                    "value": "johnny"
+                },
+                {
+                    "caption": "Mykonos",
+                    "img": "img/mykonos.jpg",
+                    "value": "alexis"
+                },
+                {
+                    "caption": "Paris fashion week",
+                    "img": "img/paris.jpeg",
+                    "value": "david"
+                },
+                {
+                    "caption": "Dubai",
+                    "img": "img/dubai.jpg",
+                    "value": "moira"
+                }
             ]
         }
     ]

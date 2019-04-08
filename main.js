@@ -9,7 +9,6 @@ $.getJSON("data.json", function(data) {
 
     var current_choices = $(`<div class="choices"></div>`);
     question.choices.forEach(choice => {
-
       var current_label = $(`<label></label>`)
       current_label.append(`<input type="radio" name=${question.name} value=${choice.value}>`);
     
@@ -19,10 +18,11 @@ $.getJSON("data.json", function(data) {
       }
       if (choice.caption) {
         curr_choice.append(`<p class="caption">${choice.caption}</p>`);
+      } else { // don't want the caption bar, so fill choice div w/ full img 
+        curr_choice.addClass('no-caption');
       }
       current_label.append(curr_choice);
       current_choices.append(current_label);
-      
     });
 
     current_question.append(current_choices);
@@ -32,18 +32,9 @@ $.getJSON("data.json", function(data) {
   $('#submit').html(data.submit_button);
 });
 
-var descriptions = {
-    david: "you're not afraid to tell it like it is",
-    alexis: "you're a social butterfly, super fashionable, and are always up for anything",
-    jonny: "you just want some family time",
-    moira: "you love reliving your glory days and overpronouncing words",
-    "uh oh!": "please go back and answer all the questions"
-}
-
 var winner = ""; // need this to be global 
 
 $('#submit').on('click', function(e) {
-    // gather all checked radio-button values
     var choices = $("input[type='radio']:checked").map(function(i, radio) {
       return $(radio).val();
     }).toArray();
@@ -69,22 +60,21 @@ $('#submit').on('click', function(e) {
     })
 
     $.getJSON("data.json", function(data) {
-      console.log(winner);
       var current_outcome;
-      if (data.questions.length < data.number_of_questions) {
-        current_outcome= $(`<p id="error">${data.error}</p>`);
+      if (choices.length < data.number_of_questions) {
+        current_outcome = $(`<p id="error">${data.error}</p>`);
       } else {
-        current_outcome = $(`<p id="congrats">${data.congrats}</p>
+        current_outcome = $(`<div class="outcome"><div class="outcome-text"><p id="congrats">${data.congrats}</p>
                               <p id="whoami">${winner}</p>
-                              <p id="whoami-description">${data.outcomes[winner].text}</p>`);
+                              <p id="whoami-description">${data.outcomes[winner].text}</p></div>
+                              <img class="outcome-img"src=${data.outcomes[winner].img}></div>`)
       }
-      $('.result-content').append(current_outcome);
+      $('.current-outcome').html(current_outcome);
     }); 
   
 });
 
 // all from https://www.w3schools.com/howto/howto_css_modals.asp
-
 var result = document.getElementById('myresult');
 var btn = document.getElementById('submit');
 var span = document.getElementsByClassName("close")[0];
