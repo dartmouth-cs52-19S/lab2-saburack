@@ -1,7 +1,7 @@
 {
     "quiz_title": "Which member of the Rose family are you?",
     "submit_button": "WHO AM I?",
-    "number_of_questions": 6,
+    "number_of_questions": 7,
     "congrats": "congrats, you're...",
     "error": "please go back and answer all questions",
     "outcomes": {

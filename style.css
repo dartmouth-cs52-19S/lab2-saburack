@@ -68,17 +68,21 @@ body {
     margin: auto 20px;
     font-size: 1rem;
 }
-input[type=radio]:checked + div {  
+label.selected > div.choice {  
     background: #F9C507; 
     box-shadow: 5px 5px #657ED4; 
+    transition: .3s ease;
 }
 input[type=radio]:hover + div {
     box-shadow: 5px 5px #657ED4; 
     cursor: pointer;
+    transform: translate(0, -5px);
+    transition: transform .3s ease;
 }
-input[type=radio]:not(:checked)  + div > img {
-    opacity: 0.5;
+label.unselected {
+    opacity: 0.65; 
 }
+
 input[type=radio]:hover + div > img {
     opacity: 1; 
 }
@@ -101,6 +105,10 @@ input[type=radio]:hover + div > img {
 #submit:hover {
     background: #F9C507;
     cursor: pointer;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 #whoami, #quiz-title h1{
     color: #F9C507;

@@ -1,6 +1,6 @@
 $.getJSON("data.json", function(data) {
   $('#quiz-title').append(`<h1>${data.quiz_title}</h1>`);
-
+  
   data.questions.forEach(question => {
     var current_question = $(`<div class="question"></div>`);
     current_question.append(`<div class="q-header">
@@ -8,28 +8,35 @@ $.getJSON("data.json", function(data) {
                             <img class="question_img_url" src=${question.question_img_url}></div>`)
 
     var current_choices = $(`<div class="choices"></div>`);
+    var i = 0; 
     question.choices.forEach(choice => {
       var current_label = $(`<label></label>`)
       current_label.append(`<input type="radio" name=${question.name} value=${choice.value}>`);
-    
-      var curr_choice = $(`<div class="choice"></div>`)
+      var curr_choice = $(`<div class="choice" id="${question.name}${i}"></div>`)
       if (choice.img) {
         curr_choice.append(`<img src=${choice.img} class="img-with-border"/>`);
       }
       if (choice.caption) {
         curr_choice.append(`<p class="caption">${choice.caption}</p>`);
-      } else { // don't want the caption bar, so fill choice div w/ full img 
+      } else { // don't want the caption bar, so choice div is just full img -- styled differently 
         curr_choice.addClass('no-caption');
       }
       current_label.append(curr_choice);
-      current_choices.append(current_label);
+      current_choices.append(current_label); 
+      i++;
     });
-
     current_question.append(current_choices);
     $('.questions').append(current_question);
   }); 
 
   $('#submit').html(data.submit_button);
+
+  $('label').click(function() {
+    $(this).addClass('selected');
+    $(this).siblings().addClass('unselected');
+    $(this).siblings().removeClass('selected');
+    $(this).removeClass('unselected');
+  });
 });
 
 var winner = ""; // need this to be global 
@@ -39,7 +46,7 @@ $('#submit').on('click', function(e) {
       return $(radio).val();
     }).toArray();
     
-    // used this for help on writing js functions
+    // used this for help on writing the function below to find the most freq. word 
     //appendto.com/2016/10/finding-the-most-frequent-string-in-a-javascript-array/
     var frequencies = {}; 
     for (i = 0; i < choices.length; i++) {
@@ -75,6 +82,7 @@ $('#submit').on('click', function(e) {
 });
 
 // all from https://www.w3schools.com/howto/howto_css_modals.asp
+// this makes a modal pop up after submission s
 var result = document.getElementById('myresult');
 var btn = document.getElementById('submit');
 var span = document.getElementsByClassName("close")[0];
