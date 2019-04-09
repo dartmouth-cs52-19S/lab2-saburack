@@ -8,11 +8,10 @@ $.getJSON("data.json", function(data) {
                             <img class="question_img_url" src=${question.question_img_url}></div>`)
 
     var current_choices = $(`<div class="choices"></div>`);
-    var i = 0; 
     question.choices.forEach(choice => {
       var current_label = $(`<label></label>`)
       current_label.append(`<input type="radio" name=${question.name} value=${choice.value}>`);
-      var curr_choice = $(`<div class="choice" id="${question.name}${i}"></div>`)
+      var curr_choice = $(`<div class="choice"></div>`)
       if (choice.img) {
         curr_choice.append(`<img src=${choice.img} class="img-with-border"/>`);
       }
@@ -23,7 +22,6 @@ $.getJSON("data.json", function(data) {
       }
       current_label.append(curr_choice);
       current_choices.append(current_label); 
-      i++;
     });
     current_question.append(current_choices);
     $('.questions').append(current_question);
@@ -78,7 +76,6 @@ $('#submit').on('click', function(e) {
       }
       $('.current-outcome').html(current_outcome);
     }); 
-  
 });
 
 // all from https://www.w3schools.com/howto/howto_css_modals.asp

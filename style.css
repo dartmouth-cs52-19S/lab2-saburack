@@ -139,17 +139,16 @@ input[type=radio]:hover + div > img {
 
 @keyframes unfoldIn {
     0% {
-      transform:scaleY(.005) scaleX(0);
+        transform:scaleY(.005) scaleX(0);
     }
     50% {
-      transform:scaleY(.005) scaleX(1);
+        transform:scaleY(.005) scaleX(1);
     }
     100% {
-      transform:scaleY(1) scaleX(1);
+        transform:scaleY(1) scaleX(1);
     }
-  }
+}
 
-  
 /* most of this is from https://www.w3schools.com/howto/howto_css_modals.asp */ 
 /* The Modal (background) */
 .result {
@@ -172,21 +171,6 @@ input[type=radio]:hover + div > img {
     width: 80%; /* Could be more or less, depending on screen size */
     transform:scaleY(.01) scaleX(0);
     animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-   /* .modal-background {
-        .modal {
-        transform:scale(0);
-        animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        } */
-    
-    /*&.out {
-        transform:scale(1);
-        animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        /*.modal-background {
-        .modal {
-            animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        }
-        }
-    }*/
 }
 .outcome {
     display: flex; 
