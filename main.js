@@ -87,13 +87,21 @@ var result = document.getElementById('myresult');
 var btn = document.getElementById('submit');
 var span = document.getElementsByClassName("close")[0];
 
+// some of the modal
 btn.onclick = function() {
   result.style.display = "block";
+  var buttonId = $(this).attr('id');
+  $('#result-content').removeAttr('class').addClass(buttonId);
+  $('body').addClass('modal-active');
 }
 span.onclick = function() {
+  $(this).addClass('out');
+  $('body').removeClass('modal-active');
   result.style.display = "none";
 }
 window.onclick = function(event) {
+  $(this).addClass('out');
+  $('body').removeClass('modal-active');
   if (event.target == result) {
     result.style.display = "none";
   }
