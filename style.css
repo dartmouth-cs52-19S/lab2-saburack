@@ -208,4 +208,9 @@ input[type=radio]:hover + div > img {
     text-decoration: none;
     cursor: pointer;
 }
+/* get rid of blue outline i saw this on stack overflow here:
+https://stackoverflow.com/questions/20340138/remove-blue-border-from-css-custom-styled-button-in-chrome */
+button:focus {
+    outline:0;
+}
 
